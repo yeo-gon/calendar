@@ -1097,11 +1097,14 @@ button {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  border: none;
+  border: 1px solid rgb(255 255 255 / 55%);
   transition:
     transform 0.14s ease,
-    filter 0.14s ease;
-  box-shadow: 0 2px 10px rgb(15 23 42 / 6%);
+    filter 0.14s ease,
+    box-shadow 0.14s ease;
+  box-shadow:
+    0 1px 2px rgb(255 255 255 / 65%) inset,
+    0 3px 12px rgb(15 23 42 / 5%);
 }
 
 .day-pastel-btn:active {
@@ -1109,28 +1112,73 @@ button {
 }
 
 .day-pastel-btn--sun {
-  background: linear-gradient(155deg, #fed7aa 0%, #fb923c 55%, #f97316 100%);
-  color: #7c2d12;
+  background: linear-gradient(
+    165deg,
+    #fff9f5 0%,
+    #ffe8dc 42%,
+    #ffd0c2 100%
+  );
+  border-color: rgb(255 200 180 / 55%);
+  color: #c25c3b;
+  box-shadow:
+    0 1px 2px rgb(255 255 255 / 65%) inset,
+    0 4px 14px rgb(255 140 100 / 14%);
 }
 
 .day-pastel-btn--moon {
-  background: linear-gradient(155deg, #e7f5ff 0%, #74c0fc 55%, var(--accent-blue) 100%);
-  color: #1864ab;
+  background: linear-gradient(
+    165deg,
+    #f7fbff 0%,
+    #e3f0ff 45%,
+    #cfe8ff 100%
+  );
+  border-color: rgb(180 210 245 / 55%);
+  color: #4c8fd4;
+  box-shadow:
+    0 1px 2px rgb(255 255 255 / 65%) inset,
+    0 4px 14px rgb(100 160 220 / 14%);
 }
 
 .day-pastel-btn--rest {
-  background: linear-gradient(155deg, #bbf7d0 0%, #4ade80 50%, #22c55e 100%);
-  color: #14532d;
+  background: linear-gradient(
+    165deg,
+    #f6fdf9 0%,
+    #dff8ea 45%,
+    #c8f2dc 100%
+  );
+  border-color: rgb(160 230 200 / 45%);
+  color: #2f9e6a;
+  box-shadow:
+    0 1px 2px rgb(255 255 255 / 65%) inset,
+    0 4px 14px rgb(0 196 113 / 12%);
 }
 
 .day-pastel-btn--cycle {
-  background: linear-gradient(155deg, #d8f5a2 0%, #94d82d 50%, #74b816 100%);
-  color: #3b5b0b;
+  background: linear-gradient(
+    165deg,
+    #faf8ff 0%,
+    #f0ebff 45%,
+    #e4dcfa 100%
+  );
+  border-color: rgb(200 190 235 / 55%);
+  color: #7b6fb0;
+  box-shadow:
+    0 1px 2px rgb(255 255 255 / 65%) inset,
+    0 4px 14px rgb(130 110 200 / 12%);
 }
 
 .day-pastel-btn--custom {
-  background: linear-gradient(155deg, #fecdd3 0%, #fb7185 50%, #f43f5e 100%);
-  color: #881337;
+  background: linear-gradient(
+    165deg,
+    #fffef8 0%,
+    #fff6d9 45%,
+    #ffedb8 100%
+  );
+  border-color: rgb(255 220 150 / 55%);
+  color: #d68a2a;
+  box-shadow:
+    0 1px 2px rgb(255 255 255 / 65%) inset,
+    0 4px 14px rgb(255 190 80 / 16%);
 }
 
 .day-bottom-bar-body {
